@@ -7,7 +7,7 @@ void read_array(int a[],int n){
   }
 }
 
-void dispaly_array(int a[],int n){
+void display_array(int a[],int n){
   printf("the array elements are \n");
   for(int i=0;i<n;i++){
     printf("%d",a[i]);
