@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//insterstion of elements in array
 void read_arr(int a[],int n){
     printf("enter the array elements \n");
     for(int i=0;i<n;i++){
