@@ -18,7 +18,7 @@ void dispaly_array(int a[],int n){
 int main(){
   int n;
   int a[100];
-  printf("Hello ! \n");
+  printf("Hello my name is azim! \n");
   printf("enter the size of the array \t");
   scanf("%d",&n);
   read_array(a,n);
