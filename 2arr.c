@@ -14,11 +14,11 @@ void display_arr(int a[],int n){
     }
 }
 
-void insert_item(int a[], int n,int pos,int item){
+int insert_item(int a[], int n,int pos,int item){
   
   if(pos<0 || pos>n){
-      printf("invalid insert at invalid position ");
-      return;
+      printf("invalid insert at invalid position !!!!! \n");
+      return(n);
   }
 
   
@@ -28,7 +28,7 @@ void insert_item(int a[], int n,int pos,int item){
   }
   a[pos]=item;
   
-  return;
+  return(n+1);
 
 }
 
@@ -49,7 +49,7 @@ int main(){
    pos=pos;
    printf("enter the tem to be inserted at the position ");
    scanf("%d",&item);
-   insert_item(a,n+1,pos,item);
+   n=insert_item(a,n,pos,item);
    display_arr(a,n);
    return(0);
    
