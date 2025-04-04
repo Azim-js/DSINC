@@ -14,7 +14,7 @@ a. Find the total number of years
 b. Suppose base addrss = 500, word length w=4, find address of car[1967], car[1969] and car[2015]
 
 
-# Solution 
+# Solution 2.1
 
 a. Given 
 ```
@@ -35,5 +35,31 @@ loc = bassadd + w * (j-lb)
 
 ```
 
+
+# Example 2.2 - 
+
+```
+ Consider the linear arrays AAA(5:50), BBB(-5:10) and CCC(1:18)
+
+ (a) Find the number of elements in each array 
+ (b) Suppose Base(AAA) = 300 and w=4 words per memory cell for AAA. FInd the address of AAA[15], AAA[35] and AAA[55]
+
+```
+
+# Solution 2.2: 
+
+```
+a. 
+
+- Number of elements in AAA(5:50) => ub - lb + 1 = 50 - 5 + 1 = 46
+- Number of elements in BBB(-5:10) => ub - lb + 1 = 10 - (-5) + 1 = 16
+- Number of elements in CCC(1:18) => ub - lb + 1 = 18 - 1 + 1 = 18
+
+b. 
+
+- loc(AAA[15]) = baseadd + w* (j-lb) = 300 + 4 * (15-5) => 340
+- loc(AAA[35]) = baseadd + w* (j-lb) = 300 + 4 * (35-5) => 420
+- loc(AAA[55]) = Cannot be ccomputed as sinxe 55 is exceeding ub 50
+```
 
 
