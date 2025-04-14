@@ -47,6 +47,37 @@ Note: Observe that the end of each pass smaller values gradually "bubble" their 
 - Now we concentrate on the desigining aspects of this sorting technique. The comparisons that are performed in each pass are shown below:
 
 
+![alt text](image-4.png)
+
+- In general we can say i=0 to n-(j+1) or i=0 to n-j-1
+- Here, j=1 to 4 represent pass number. In general j=1 to n-1.
+
+So, The partial code can be written as 
+
+```
+for j=1 to n-1
+    for i=0 to n-j-1
+        if(A[i] >A[i+1])
+            exchange(A[i],A[i+1])
+        end if
+    end if
+end if
+```
+
+
+# 2.8 Algorthim for bubble sort 
+```
+Algorthim BubbleSort(a[],n)
+    for j<-1 to n-1 do
+        for i<- 0 to n-j-1 do 
+            if( a[i] > a[i+1])
+                temp <- a[i]
+                a[i]<- a[i+1]
+                a[i+1] <- temp
+            end if
+        end for
+    end for
+```
 
 
 
