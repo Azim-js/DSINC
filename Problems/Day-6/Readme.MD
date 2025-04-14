@@ -79,5 +79,17 @@ Algorthim BubbleSort(a[],n)
     end for
 ```
 
+- Advantages of bubble sort 
+
+- Very simple and easy to program 
+- straight forward approach
+
+- Disadvantages of bubble sort 
+
+- It runs slowly and hence it is not efficient. More efficient sorting techinques are present 
+- even if the elements are sorted, n-1 passess are required to sort
+
+
+
 
 
